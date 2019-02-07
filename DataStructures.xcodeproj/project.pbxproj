@@ -10,6 +10,9 @@
 		95A42EEB21FF5D84004AE0D8 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95A42EE921FF5D84004AE0D8 /* Controller.cpp */; };
 		95A42EED21FF5EBC004AE0D8 /* Runnner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95A42EEC21FF5EBC004AE0D8 /* Runnner.cpp */; };
 		95D4ABC62209DDEB0095675E /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95D4ABC42209DDEB0095675E /* Timer.cpp */; };
+		95F54E1F220C863E00CD1BBA /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F54E1D220C863E00CD1BBA /* FileController.cpp */; };
+		95F54E24220C86ED00CD1BBA /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F54E23220C86ED00CD1BBA /* Music.cpp */; };
+		95F54E26220C870100CD1BBA /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F54E25220C870100CD1BBA /* CrimeData.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,14 @@
 		95D4ABC42209DDEB0095675E /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		95D4ABC52209DDEB0095675E /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		95F54E1C220C852400CD1BBA /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		95F54E1D220C863E00CD1BBA /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		95F54E1E220C863E00CD1BBA /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		95F54E21220C86ED00CD1BBA /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		95F54E22220C86ED00CD1BBA /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
+		95F54E23220C86ED00CD1BBA /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
+		95F54E25220C870100CD1BBA /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
+		95F54E27220C874D00CD1BBA /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		95F54E28220C874D00CD1BBA /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +77,7 @@
 		95A42EDC21FF5BBA004AE0D8 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				95F54E20220C868F00CD1BBA /* Resources */,
 				95A42EE621FF5C5C004AE0D8 /* Diagrams */,
 				95A42EE521FF5C4E004AE0D8 /* Controller */,
 				95A42EE421FF5C45004AE0D8 /* Model */,
@@ -88,6 +100,8 @@
 				95D4ABC32209DDD20095675E /* Tools */,
 				95A42EE921FF5D84004AE0D8 /* Controller.cpp */,
 				95A42EEA21FF5D84004AE0D8 /* Controller.hpp */,
+				95F54E1D220C863E00CD1BBA /* FileController.cpp */,
+				95F54E1E220C863E00CD1BBA /* FileController.hpp */,
 				95A42EEC21FF5EBC004AE0D8 /* Runnner.cpp */,
 			);
 			path = Controller;
@@ -124,6 +138,19 @@
 				95A42EEE21FF6100004AE0D8 /* Node.hpp */,
 			);
 			path = Nodes;
+			sourceTree = "<group>";
+		};
+		95F54E20220C868F00CD1BBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95F54E27220C874D00CD1BBA /* crime.csv */,
+				95F54E28220C874D00CD1BBA /* music.csv */,
+				95F54E25220C870100CD1BBA /* CrimeData.cpp */,
+				95F54E21220C86ED00CD1BBA /* CrimeData.hpp */,
+				95F54E23220C86ED00CD1BBA /* Music.cpp */,
+				95F54E22220C86ED00CD1BBA /* Music.hpp */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F54E24220C86ED00CD1BBA /* Music.cpp in Sources */,
 				95D4ABC62209DDEB0095675E /* Timer.cpp in Sources */,
+				95F54E26220C870100CD1BBA /* CrimeData.cpp in Sources */,
 				95A42EED21FF5EBC004AE0D8 /* Runnner.cpp in Sources */,
 				95A42EEB21FF5D84004AE0D8 /* Controller.cpp in Sources */,
+				95F54E1F220C863E00CD1BBA /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
