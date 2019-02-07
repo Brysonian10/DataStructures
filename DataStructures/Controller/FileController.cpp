@@ -26,7 +26,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         //exclude header row
             if  (rowCount != 0)
             {
-                if(currentCSVLIne.length() != 0)
+                if(currentCSVLine.length() != 0)
                 {
                     CrimeData row(currentCSVLine);
                     crimeVector.push_back(row);
@@ -62,7 +62,7 @@ vector<Music> FileController :: musicDataToVector(string filename)
             //exclude header row
             if  (rowCount != 0)
             {
-                if(currentCSVLIne.length() != 0)
+                if(currentCSVLine.length() != 0)
                 {
                     Music row(currentCSVLine);
                     musicVector.push_back(row);
