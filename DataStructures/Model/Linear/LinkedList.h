@@ -22,6 +22,10 @@ public:
     LinkedList();
     //descturtor
     virtual ~LinkedList(); //virtual so it can be overridden
+    virtual void add(Type item);
+    virtual void addAtIndex(int index, Type item);
+    virtual Type getFromIndex(int index);
+    virtual Type remove(int index);
     //helper methods
     int getSize() const;
     LinearNode<Type> * getFront();
