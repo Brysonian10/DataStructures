@@ -14,6 +14,7 @@
 #include "../Model/Linear/LinkedList.hpp"
 #include "../Model/NonLinear/BinarySearchTree.hpp" //ignore me
 #include "../Model/Linear/Array.hpp"
+
 #include <string>
 #include <fstream>
 #include <iostream>

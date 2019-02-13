@@ -92,11 +92,11 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
     //If the file exists at the path
     if (dataFile.is_open())
     {
-        //keep reading until yoou are at the end of the file
+        //keep reading until you are at the end of the file
         while (!dataFile.eof())
         {
             //grab each line form CSV separated b the carriage return character
-            getline(dataFile, currentCSVLine, '/r');
+            getline(dataFile, currentCSVLine, '\r');
             //exclude header row
             if (rowCount != 0)
             {
@@ -134,7 +134,7 @@ LinkedList<Music> FileController :: readDataToList(string filename)
         while (!dataFile.eof())
         {
             //grab each line form CSV separated b the carriage return character
-            getline(dataFile, currentCSVLine, '/r');
+            getline(dataFile, currentCSVLine, '\r');
             //exclude header row
             if (rowCount != 0)
             {
