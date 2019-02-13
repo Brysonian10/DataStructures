@@ -13,6 +13,7 @@
 		95F54E1F220C863E00CD1BBA /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F54E1D220C863E00CD1BBA /* FileController.cpp */; };
 		95F54E24220C86ED00CD1BBA /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F54E23220C86ED00CD1BBA /* Music.cpp */; };
 		95F54E26220C870100CD1BBA /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F54E25220C870100CD1BBA /* CrimeData.cpp */; };
+		95F8B56E22147E7C003A888D /* LinearTesters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F8B56C22147E7C003A888D /* LinearTesters.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		95F54E25220C870100CD1BBA /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		95F54E27220C874D00CD1BBA /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		95F54E28220C874D00CD1BBA /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
+		95F8B56C22147E7C003A888D /* LinearTesters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTesters.cpp; sourceTree = "<group>"; };
+		95F8B56D22147E7C003A888D /* LinearTesters.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTesters.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		95A42EDC21FF5BBA004AE0D8 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				95F8B56B22147E68003A888D /* Testers */,
 				95F54E20220C868F00CD1BBA /* Resources */,
 				95A42EE621FF5C5C004AE0D8 /* Diagrams */,
 				95A42EE521FF5C4E004AE0D8 /* Controller */,
@@ -161,6 +165,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		95F8B56B22147E68003A888D /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				95F8B56C22147E7C003A888D /* LinearTesters.cpp */,
+				95F8B56D22147E7C003A888D /* LinearTesters.hpp */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +232,7 @@
 			files = (
 				95F54E24220C86ED00CD1BBA /* Music.cpp in Sources */,
 				95D4ABC62209DDEB0095675E /* Timer.cpp in Sources */,
+				95F8B56E22147E7C003A888D /* LinearTesters.cpp in Sources */,
 				95F54E26220C870100CD1BBA /* CrimeData.cpp in Sources */,
 				95A42EED21FF5EBC004AE0D8 /* Runnner.cpp in Sources */,
 				95A42EEB21FF5D84004AE0D8 /* Controller.cpp in Sources */,
