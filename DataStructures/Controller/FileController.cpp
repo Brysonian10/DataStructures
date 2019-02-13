@@ -79,3 +79,80 @@ vector<Music> FileController :: musicDataToVector(string filename)
     
     return musicVector;
 }
+
+LinkedList<CrimeData> FileController :: readDataToList(string filename)
+{
+    LinkedList<CrimeData> crimes;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    
+    ifstream dataFile(filename);
+    
+    //If the file exists at the path
+    if (dataFile.is_open())
+    {
+        //keep reading until yoou are at the end of the file
+        while (!dataFile.eof())
+        {
+            //grab each line form CSV separated b the carriage return character
+            getline(dataFile, currentCSVLine, '/r');
+            //exclude header row
+            if (rowCount != 0)
+            {
+                //create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
+                if (currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimes.add(row);
+                }
+            }
+            rowCount++;
+        }
+        dataFile.close();
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    return crimes;
+}
+
+LinkedList<Music> FileController :: readDataToList(string filename)
+{
+    LinkedList<Music> music;
+    
+    string currentCSVLine;
+    int rowCount = 0;
+    
+    ifstream dataFile(filename);
+    
+    //If the file exists at the path
+    if (dataFile.is_open())
+    {
+        //keep reading until yoou are at the end of the file
+        while (!dataFile.eof())
+        {
+            //grab each line form CSV separated b the carriage return character
+            getline(dataFile, currentCSVLine, '/r');
+            //exclude header row
+            if (rowCount != 0)
+            {
+                //create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
+                if (currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    music.add(row);
+                }
+            }
+            rowCount++;
+        }
+        dataFile.close();
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    return music;
+}
+
