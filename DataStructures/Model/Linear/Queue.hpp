@@ -9,7 +9,7 @@
 #ifndef Queue_h
 #define Queue_h
 
-#inlude "LinkedList.hpp"
+#include "LinkedList.hpp"
 #include <iostream>
 using namespace std;
 
@@ -17,7 +17,7 @@ template <class Type>
 class Queue : public LinkedList<Type>
 {
 public:
-    Queue()
+    Queue();
     ~Queue();
     
     //queue methods
@@ -28,19 +28,19 @@ public:
     
     //overriden LinkedList methods
     void add(Type data);
-    void adddAtIndex(int index, Type data);
-    Type geFromIndex (int index);
+    void addAtIndex(int index, Type data);
+    Type getFromIndex (int index);
     Type remove(int index);
-}
+};
 
 template <class Type>
-Queue<Type> :: Queue() : LinkedLIst<Type>()
+Queue<Type> :: Queue() : LinkedList<Type>()
 {
     //empty sincce it is handled by the parent class constructor
 }
 
 template <class Type>
-Queue<Type :: ~Queue()
+Queue<Type> :: ~Queue()
 {
     for(LinearNode<Type> * removed = this->front; removed != nullptr; removed = this->front)
     {
@@ -49,7 +49,7 @@ Queue<Type :: ~Queue()
     }
 }
 
-tmeplate <class Type>
+template <class Type>
 void Queue<Type> :: enqueue(Type item)
 {
     LinearNode<Type> * added = new LinearNode<Type>(item);
@@ -83,7 +83,7 @@ void Queue<Type> :: add(Type item)
 template <class Type>
 Type Queue<Type> :: dequeue()
 {
-    assert(this->size > 0)
+    assert(this->size > 0);
     
     Type returned = this->front->getData();
     
@@ -99,7 +99,7 @@ Type Queue<Type> :: dequeue()
 template <class Type>
 Type Queue<Type> :: remove(int index)
 {
-    assert(index == 0)
+    assert(index == 0);
     return dequeue();
 }
 
@@ -120,7 +120,7 @@ Type Queue<Type> :: peek()
 }
 
 template <class Type>
-Type Queue<Type> :; getFromIndex(int index)
+Type Queue<Type> :: getFromIndex(int index)
 {
     assert(index == 0);
     return peek();

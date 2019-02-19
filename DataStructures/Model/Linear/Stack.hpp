@@ -14,7 +14,7 @@
 template <class Type>
 class Stack : public LinkedList<Type>
 {
-pubic:
+public:
     Stack();
     ~Stack();
     
@@ -28,7 +28,7 @@ pubic:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
-}
+};
 
 template <class Type>
 Stack<Type> :: Stack() : LinkedList<Type>()
@@ -64,13 +64,13 @@ void Stack<Type> :: push(Type data)
 }
 
 template <class Type>
-void Stack<Type> :; addd(Type data)
+void Stack<Type> :: add(Type data)
 {
-    void push(data);
+    push(data);
 }
 
 template <class Type>
-void Stack<TYpe> :: addAtIndex(int index, Type data)
+void Stack<Type> :: addAtIndex(int index, Type data)
 {
     assert(index == 0);
     push(data);
@@ -82,9 +82,9 @@ Type Stack<Type> :: pop()
     assert (this->size > 0);
     Type removed = this->front->getData();
     
-    LinearNode<Type> * remoedNode = this->getFront();
-    this->frot = removedNode->getNextNode();
-    delete removedode;
+    LinearNode<Type> * removeNode = this->getFront();
+    this->frot = removeNode->getNextNode();
+    delete removeNode;
     
     this->size--;
     
@@ -102,7 +102,7 @@ template <class Type>
 Type Stack<Type> :: peek()
 {
     assert(this->size > 0);
-    return ths->getFront()->getData();
+    return this->getFront()->getData();
 }
 
 template <class Type>

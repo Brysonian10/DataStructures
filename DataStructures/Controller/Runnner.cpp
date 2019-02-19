@@ -13,5 +13,5 @@ int main()
 {
     Controller app;
     app.start();
-    app.testFiles();
+    
 }

@@ -11,13 +11,22 @@
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App" << endl;
+    testLinear();
 }
 
-void Controller :: testFiles()
+void Controller :: usingNodes()
 {
-    vector<Music> musicVector = FileController :: musicDataToVector("../Resources/music.csv");
-    for(int index = 0; index < musicVector.size(); ++index)
-    {
-    cout << index << ": contents are: " << musicVector[index] << endl;
-    }
+    LinearNode<int> mine(5);
+    LinearNode<string> wordHolder("words can be stored too");
+    cout << mine.getData() << endl;
+    cout << wordHolder.getData() << endl;
+    wordHolder.setData("replaced Text");
+    cout << wordHolder.getData() << endl;
+    
+}
+
+void Controller :: testLinear()
+{
+    LinearTester lookieHere;
+    lookieHere.testVsSTL();
 }

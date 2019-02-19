@@ -118,7 +118,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
     return crimes;
 }
 
-LinkedList<Music> FileController :: readDataToList(string filename)
+LinkedList<Music> FileController :: musicDataToList(string filename)
 {
     LinkedList<Music> music;
     
@@ -141,7 +141,7 @@ LinkedList<Music> FileController :: readDataToList(string filename)
                 //create a CrimeData instance from the line. Exclude a blank line (usually if opened separately)
                 if (currentCSVLine.length() != 0)
                 {
-                    CrimeData row(currentCSVLine);
+                    Music row(currentCSVLine);
                     music.add(row);
                 }
             }

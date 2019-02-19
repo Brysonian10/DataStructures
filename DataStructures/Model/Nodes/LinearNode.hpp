@@ -46,7 +46,7 @@ LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(
     this->next = next;
 }
 
-/accessor methods
+//accessor methods
 
 template <class Type>
 void LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer )
@@ -55,7 +55,7 @@ void LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer )
 }
 
 template <class Type>
-LinearNode<Type> * LInearNode<Type> :: getNextNode()
+LinearNode<Type> * LinearNode<Type> :: getNextNode()
 {
     return next;
 }
