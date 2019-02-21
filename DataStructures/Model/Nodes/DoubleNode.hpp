@@ -25,7 +25,7 @@ public:
     //   get/set
     DoubleNode<Type> * getNode;
     void setNode(DoubleNode<Type> * next);
-}
+};
 
 template <class Type>
 DoubleNode<Type> :: DoubleNode() : Node<Type>()
