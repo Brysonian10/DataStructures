@@ -36,7 +36,7 @@ public:
 };
 
  template <class Type>
-    Type CircularList<Type> :: CircularList();
+    Type CircularList<Type> :: CircularList()
     {
         //stuff
         front = nullptr;
@@ -45,7 +45,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> :: ~CircularList();
+    Type CircularList<Type> :: ~CircularList()
     {
         //stuff
         DoubleNode<Type> * current = front;
@@ -58,7 +58,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> : findNode(Type item);
+    Type CircularList<Type> :: findNode(Type item)
     {
         //stuff
         assert (index >= 0 && index < this->size);
@@ -85,7 +85,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> : add(Type item);
+    Type CircularList<Type> : add(Type item)
     {
         //stuff
         DoubleNode<Type> * addedNode;
@@ -104,7 +104,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> : addAtIndex(int index, Type item);
+    Type CircularList<Type> : addAtIndex(int index, Type item)
     {
         //stuff
         assert (index >= 0 && index <= this->size);
@@ -139,6 +139,63 @@ public:
         next->setPrevious(addMe);
         this->size++;
         
+    }
+    
+    template <class Type>
+    Type CircularList<Type> :: getFromIndex(int index);
+    {
+        //stuff
+        assert ( index >= 0 && index < this->size);
+        DoubleNode<Type> * holder = findNode(index);
+        return holder->getData();
+    }
+    
+    template <class Type>
+    Type CircularList<Type> :: remove(int index)
+    {
+        //stuff
+        assert (index >= 0 && index < this->size);
+        
+        DoubleNode<Type> * removed = findNode(index);
+        DoubleNode<Type> * removedPrevious = remoed->getPrevious();
+        DoubleNode<Type> * removedNext = removed->getNext();
+        
+        if (index == 0)
+        {
+            this->front = removedNext;
+            this->end->setNext(removedNext);
+        }
+        if (index == this->size - 1)
+        {
+            this->end = removedPrevious;
+            this->front->setPrevious(removedPrevious);
+        }
+        
+        removedPrevious->setNext(removedNext);
+        removedNext->setPrevious(removedPrevious);
+        
+        Type value = removed->getData();
+        this->size--;
+        delete removed;
+        return value;
+    }
+    
+    template <class Type>
+    Type CircularList<Type> :: setAtIndex(int index, Type item)
+    {
+        //stuff
+        assert(index >= 0 && index < size);
+        DoubleNode<Type> * replacedValue = findNode(index);
+        Type replaced = replacedValue->getData();
+        replacedValue->setData(item);
+        return replaced
+    }
+    
+    template <class Type>
+    int CircularList<Type> :: getSize() const
+    {
+        //stuff
+        return this->size;
     }
     
 #endif /* CiruclareList_h */
