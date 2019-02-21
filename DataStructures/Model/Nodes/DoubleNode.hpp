@@ -23,7 +23,7 @@ public:
     DoubleNode(Type data);
     DoubleNode(Type data, DoubleNode<Type> * nextNode);
     //   get/set
-    DoubleNode<Type> * getNode;
+    DoubleNode<Type> * getNext;
     void setNode(DoubleNode<Type> * next);
 };
 
@@ -52,7 +52,7 @@ void DoubleNode<Type> :: setNode(DoubleNode<Type> * nextNode )
 }
 
 template <class Type>
-DoubleNode<Type> * DoubleNode<Type> :: getNode()
+DoubleNode<Type> * DoubleNode<Type> :: getNext()
 {
     return next;
 }
