@@ -28,4 +28,43 @@ void LinearTester :: testVsSTL()
     crimeTimerSTL.resetTimer();
     musicOOP.resetTimer();
     musicSTL.resetTimer();
+    
+    int randomIndex = rand() % moreCrimes.getSize();
+    
+    crimeTimerSTL.startTimer();
+    crimes[randomIndex];
+    crimeTimerSTL.stopTimer();
+    
+    crimeTimerOOP.startTimer();
+    moreCrimes.getFromIndex(randomIndex);
+    crimeTimerOOP.stopTimer();
+    
+    cout << "This is the STL random retrieval: " << endl;
+    crimeTimerSTL.displayInformation();
+    cout << "This is the OOP Node random retrieval : " << endl;
+    musicOOP.displayInformation();
+    cout << "A difference of: " << musicOOP.getTimeInMicroseconds() - musicSTL.getTimeInMicroseconds() << " microseconds" << endl;
+}
+
+void LinearTester :: testVsStack()
+{
+    vector<CrimeData> crimes = FileController :: readCrimeDataToVector("/Users/bspa6593/Documents/C++ Workspace/DataStructures/DataStructures/Resources/crime.csv");
+    
+    LinkedList<CrimeData> moreCrimes = FileController :: readDataToList("/Users/bspa6593/Documents/C++ Workspace/DataStructures/DataStructures/Resources/crime.csv");
+    
+    Stack<CrimeData> crimeStack;
+    for (int index = 0; index < 10; index++)
+    {
+        crimeStack.add(crimes[index]);
+    }
+}
+
+void LinearTester :: testVsQueue()
+{
+    
+}
+
+void LinearTester :: testVsDouble()
+{
+    
 }

@@ -23,6 +23,9 @@ class LinearTester
 {
 public:
     void testVsSTL();
+    void testVsStack();
+    void testVsQueue();
+    void testVsDouble();
 };
 
 #endif /* LinearTesters_hpp */
