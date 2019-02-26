@@ -115,7 +115,7 @@ void Queue<Type> :: clear()
 template <class Type>
 Type Queue<Type> :: peek()
 {
-    assert(this->seize >0);
+    assert(this->size >0);
     return this->getFront()->getData();
 }
 
