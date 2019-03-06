@@ -114,7 +114,18 @@ int Array<Type> :: getSize() const
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
-    //stuff
+    assert(index >=0 && index < size);
+    
+    Type value = internalArray[index];
+    
+    return value;
+}
+
+template <class Type>
+void Array<Type> :: set AtIndex(int pos, Type item)
+{
+    assert(pos >= 0 && pos < size);
+    internalArray[pos] = item;
 }
 
 #endif /* Array_h */
