@@ -40,6 +40,7 @@
 		95A42EEA21FF5D84004AE0D8 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		95A42EEC21FF5EBC004AE0D8 /* Runnner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runnner.cpp; sourceTree = "<group>"; };
 		95A42EEE21FF6100004AE0D8 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		95BC1C6722303066003303DA /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		95CC503D221EF168006A4D77 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		95CC503E221EF817006A4D77 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		95D4ABC42209DDEB0095675E /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				950CF2AD2211D60700F2088A /* Stack.hpp */,
 				95CC503E221EF817006A4D77 /* CircularList.hpp */,
 				955A8966222451F900E8EC90 /* Array.hpp */,
+				95BC1C6722303066003303DA /* Graph.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
