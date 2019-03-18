@@ -33,7 +33,7 @@ public:
     //Connect vertices
     void addEdge(int source, int target);
     void addEdgeUndireced(int source, int target);
-    void addEdgeCost(int source, int tareger, int cost);
+    void addEdgeCost(int source, int tareget, int cost);
     //Disconnect vertices
     void removeEdge(int source, int target);
     void removeEdgeUndirected(int source, int target);
@@ -54,7 +54,7 @@ public:
     void breadthFirstTraversal(Graph<Type> & graph, int vertex);
     int costTraveersal(Graph<Type> & graph, int vertex);
     
-}
+};
 
 template <class Type>
 const int Graph<Type> :: MAXIMUM;

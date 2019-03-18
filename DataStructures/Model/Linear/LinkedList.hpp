@@ -7,6 +7,8 @@
 //
 
 #include "List.hpp"
+#include "Array.hpp"
+
 
 #ifndef LinkedList_h
 #define LinkedList_h
@@ -27,18 +29,16 @@ public:
     virtual ~LinkedList(); //virtual so it can be overridden
     void add(Type item);
     void addAtIndex(int index, Type item);
+    
     Type getFromIndex(int index);
     Type remove(int index);
     //helper methods
     int getSize() const;
+    
     LinearNode<Type> * getFront();
     LinearNode<Type> * getEnd();
     
     //Structure methods
-//    void add(Type item);
-//    void addAtIndex(int index, Type item);
-//    Type getFromIndex(int index);
-//    Type remove(int index);
     // type setAtIndex(int index, Type item);
     bool contains(Type item);
 };
