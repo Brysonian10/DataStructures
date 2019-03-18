@@ -157,11 +157,15 @@ void GraphTester :: testGraphs()
 
 void GraphTester :: compareTraversals()
 {
-    
+    for (int i = 0; i < puzzle.size(); i++)
+    {
+        puzzle.depthFirstTraversal(puzzle, i);
+    }
 }
 
 void GraphTester :: findCheapestTraversal()
 {
+    puzzle.costTraversal(puzzle, 0);
     
 }
 #endif /* GraphTester_hpp */

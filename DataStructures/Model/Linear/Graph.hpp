@@ -183,6 +183,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
     return vertexNeighbors;
 }
 
+//go through each vertex, make a connection
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
@@ -192,6 +193,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
     depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
 
+//if visited then skip it
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
 {
@@ -210,6 +212,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
     }
 }
 
+//this is just like the depth first traversal except there are loops allowed.
 template <class Type>
 void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {

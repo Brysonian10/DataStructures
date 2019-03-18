@@ -11,7 +11,7 @@
 
 #include "../Nodes/DoubleNode.hpp"
 
-tempate <class Type>
+template <class Type>
 class CircularList
 {
 private:
@@ -20,7 +20,7 @@ private:
     int size;
     
     
-    DoubleNode<TYpe. * findNode(int index);
+    DoubleNode<Type> * findNode(int index);
 public:
     CircularList();
     ~CircularList();
@@ -58,7 +58,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> :: findNode(Type item)
+    void CircularList<Type> :: findNode(Type item)
     {
         //stuff
         assert (index >= 0 && index < this->size);
@@ -85,7 +85,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> : add(Type item)
+    void CircularList<Type> :: add(Type item)
     {
         //stuff
         DoubleNode<Type> * addedNode;
@@ -100,11 +100,11 @@ public:
             this->end->setNext(addedNode);
         }
         this->end = addedNode;
-        tihs->size++;
+        this->size++;
     }
     
     template <class Type>
-    Type CircularList<Type> : addAtIndex(int index, Type item)
+    void CircularList<Type> :: addAtIndex(int index, Type item)
     {
         //stuff
         assert (index >= 0 && index <= this->size);
@@ -116,7 +116,7 @@ public:
         if (index < this->size)
         {
             next = findNode(index);
-            previous = next-getPrevious();
+            previous = next - getPrevious();
         }
         else if (index == this->size)
         {

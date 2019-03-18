@@ -18,7 +18,7 @@ template <class Type>
 class Array
 {
 private:
-    Type * internalArray
+    Type * internalArray;
     int size;
     
 public:
@@ -28,7 +28,7 @@ public:
     //copy constructor
     Array<Type>(const Array<Type> & toCopy);
     //Destructor
-    ~Array<Type>()
+    ~Array<Type>();
     
     //Operators
     Array<Type> & operator = (const Array<Type> & toReplace);
@@ -37,8 +37,8 @@ public:
     
     //methods
     int getSize() const;
-    Type getFromIndex(nt index);
-    void setAtndex(int index, Type data);
+    Type getFromIndex(int index);
+    void setAtIndex(int index, Type data);
 };
 
 template <class Type>
@@ -47,7 +47,7 @@ Array<Type> :: Array(int size)
     assert(size > 0);
     this->size = size;
     
-    internalArray = newType[size];
+    internalArray = new Type[size];
 }
 
 template <class Type>
@@ -122,7 +122,7 @@ Type Array<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-void Array<Type> :: set AtIndex(int pos, Type item)
+void Array<Type> :: setAtIndex(int pos, Type item)
 {
     assert(pos >= 0 && pos < size);
     internalArray[pos] = item;
