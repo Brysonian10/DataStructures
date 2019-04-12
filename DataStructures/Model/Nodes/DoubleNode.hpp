@@ -12,7 +12,7 @@
 #include "Node.hpp"
 
 template <class Type>
-class DoubleNode <Type> : public Node<Type>
+class DoubleNode<Type> : public Node<Type>
 {
 private:
     DoubleNode<Type> * nextNode;
