@@ -9,31 +9,33 @@
 #ifndef BinaryTreeNode_h
 #define BinaryTreeNode_h
 
+#include "Node.hpp"
 #include <assert.h>
 
 template <class Type>
-class BinaryTreeNode
+class BinaryTreeNode : public Node<Type>
 {
 private:
     //data members
     BinaryTreeNode<Type> * root;
     BinaryTreeNode<Type> * leftChild;
-    BinaryTreeNode<Type> * rigtChild;
+    BinaryTreeNode<Type> * rightChild;
 public:
-    //methods
+    //constructors
     BinaryTreeNode<Type>();
-    BinaryTreeNode<Typ>(Type data);
-    //getters and setters
+    BinaryTreeNode<Type>(Type data);
+    //getters and setters (methods)
     BinaryTreeNode<Type> * getRoot();
     void setRoot(BinaryTreeNode<Type> * root);
     BinaryTreeNode<Type> * getLeftChild();
     void setLeftChild(BinaryTreeNode<Type> * left);
     BinaryTreeNode<Type> * getRightChild();
-    void setRighthild(BinaryTreeNode<Type> * right);
+    void setRightChild(BinaryTreeNode<Type> * right);
 };
 
 //template definitions
 
+//constructors
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
@@ -43,7 +45,9 @@ BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node <Type>(data)
 {
-    
+    this->root = nullptr;
+    this->rightChild = nullptr;
+    this->leftChild = nullptr;
 }
 
 //root getter and settter
