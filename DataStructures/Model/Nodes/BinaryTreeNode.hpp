@@ -1,13 +1,13 @@
 //
-//  BinaryTreeNode.h
+//  BinaryTreeNode.hpp
 //  DataStructures
 //
 //  Created by Spaulding, Bryson on 4/12/19.
 //  Copyright © 2019 CTEC. All rights reserved.
 //
 
-#ifndef BinaryTreeNode_h
-#define BinaryTreeNode_h
+#ifndef BinaryTreeNode_hpp
+#define BinaryTreeNode_hpp
 
 #include "Node.hpp"
 #include <assert.h>
