@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>1242</x>
-      <y>18</y>
+      <y>0</y>
       <w>288</w>
       <h>216</h>
     </coordinates>
@@ -30,7 +30,7 @@ Node&lt;Type&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>1017</x>
-      <y>288</y>
+      <y>270</y>
       <w>378</w>
       <h>162</h>
     </coordinates>
@@ -56,7 +56,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>1593</x>
-      <y>18</y>
+      <y>0</y>
       <w>288</w>
       <h>207</h>
     </coordinates>
@@ -80,7 +80,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>Relation</id>
     <coordinates>
       <x>1242</x>
-      <y>225</y>
+      <y>207</y>
       <w>216</w>
       <h>81</h>
     </coordinates>
@@ -91,7 +91,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>936</x>
-      <y>684</y>
+      <y>666</y>
       <w>243</w>
       <h>252</h>
     </coordinates>
@@ -118,7 +118,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>792</x>
-      <y>972</y>
+      <y>954</y>
       <w>252</w>
       <h>324</h>
     </coordinates>
@@ -151,7 +151,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>1107</x>
-      <y>972</y>
+      <y>954</y>
       <w>261</w>
       <h>324</h>
     </coordinates>
@@ -184,7 +184,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>Relation</id>
     <coordinates>
       <x>1053</x>
-      <y>657</y>
+      <y>639</y>
       <w>45</w>
       <h>45</h>
     </coordinates>
@@ -195,7 +195,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>Relation</id>
     <coordinates>
       <x>837</x>
-      <y>927</y>
+      <y>909</y>
       <w>207</w>
       <h>63</h>
     </coordinates>
@@ -206,7 +206,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>Relation</id>
     <coordinates>
       <x>1125</x>
-      <y>927</y>
+      <y>909</y>
       <w>63</w>
       <h>63</h>
     </coordinates>
@@ -217,7 +217,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>Relation</id>
     <coordinates>
       <x>1134</x>
-      <y>441</y>
+      <y>423</y>
       <w>108</w>
       <h>54</h>
     </coordinates>
@@ -228,7 +228,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>1512</x>
-      <y>621</y>
+      <y>603</y>
       <w>207</w>
       <h>153</h>
     </coordinates>
@@ -249,7 +249,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>1746</x>
-      <y>621</y>
+      <y>603</y>
       <w>207</w>
       <h>153</h>
     </coordinates>
@@ -270,7 +270,7 @@ LinearNode&lt;Type&gt;(Type, LinearNode&lt;Type&gt;) : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>1035</x>
-      <y>477</y>
+      <y>459</y>
       <w>216</w>
       <h>189</h>
     </coordinates>
@@ -294,7 +294,7 @@ getend() : LinearNode&lt;Type&gt;*</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1566</x>
-      <y>882</y>
+      <y>864</y>
       <w>171</w>
       <h>108</h>
     </coordinates>
@@ -308,7 +308,7 @@ getend() : LinearNode&lt;Type&gt;*</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1764</x>
-      <y>882</y>
+      <y>864</y>
       <w>171</w>
       <h>108</h>
     </coordinates>
@@ -322,7 +322,7 @@ getend() : LinearNode&lt;Type&gt;*</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1566</x>
-      <y>1008</y>
+      <y>990</y>
       <w>171</w>
       <h>108</h>
     </coordinates>
@@ -336,7 +336,7 @@ getend() : LinearNode&lt;Type&gt;*</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1764</x>
-      <y>1008</y>
+      <y>990</y>
       <w>171</w>
       <h>108</h>
     </coordinates>
@@ -350,7 +350,7 @@ getend() : LinearNode&lt;Type&gt;*</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1566</x>
-      <y>1134</y>
+      <y>1116</y>
       <w>171</w>
       <h>108</h>
     </coordinates>
@@ -364,7 +364,7 @@ getend() : LinearNode&lt;Type&gt;*</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1035</x>
-      <y>882</y>
+      <y>864</y>
       <w>549</w>
       <h>135</h>
     </coordinates>
@@ -377,7 +377,7 @@ Aggrigation
     <id>UMLClass</id>
     <coordinates>
       <x>1512</x>
-      <y>351</y>
+      <y>333</y>
       <w>207</w>
       <h>189</h>
     </coordinates>
@@ -396,7 +396,7 @@ Aggrigation
     <id>Relation</id>
     <coordinates>
       <x>1476</x>
-      <y>225</y>
+      <y>207</y>
       <w>207</w>
       <h>144</h>
     </coordinates>
@@ -407,7 +407,7 @@ Aggrigation
     <id>UMLClass</id>
     <coordinates>
       <x>1908</x>
-      <y>27</y>
+      <y>9</y>
       <w>495</w>
       <h>576</h>
     </coordinates>
@@ -457,7 +457,7 @@ Graph() : constructor
     <id>UMLClass</id>
     <coordinates>
       <x>576</x>
-      <y>297</y>
+      <y>279</y>
       <w>324</w>
       <h>234</h>
     </coordinates>
@@ -486,11 +486,61 @@ Graph() : constructor
     <id>Relation</id>
     <coordinates>
       <x>846</x>
-      <y>225</y>
+      <y>207</y>
       <w>468</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>500.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>171</y>
+      <w>522</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>BinarySearchTree&lt;Type&gt;
+--
+*Structure*
++ BinarySearchTree() : constructor
++ ~BinarySearchTree() " destructor
+# destroyTree() : void
+
+*Informational Methods*
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
++ getRoot() : BinaryTreeNode&lt;Type&gt; *
+
+*Recursive Information Helpers*
+# calculateSize(BinaryTreeNode&lt;Type&gt; * startNode) : int
+# calculateHeight(BinaryTreeNode&lt;Type&gt; * startNode) : int
+# isBalanced(BinaryTreeNode&lt;Type&gt; * startNode) : bool
+# isComplete(BinaryTreeNode&lt;Type. * startNode, int index, int size) : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+*Recursive Data Helpers*
+# removeNode(BinaryTreeNode&lt;Type&gt; * removeMe) : void
+
+*Traversals*
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ posOrderTraversal() : void
+
+*Recursive Traversals Helper*
+# inOrderTraversal(BinaryTreeNode&lt;Type&gt; * inStart) : void
+# preOrderTraversal(BinaryTreeNode&lt;Type&gt; * preStart) :void
+# postOrderTraversal(BinaryTreeNode&lt;Type&gt; * postStart) : void
+# getRightMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
+# getLeftMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
