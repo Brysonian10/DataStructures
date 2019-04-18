@@ -1,5 +1,5 @@
 //
-//  CiruclareList.h
+//  CiruclareList.hpp
 //  DataStructures
 //
 //  Created by Spaulding, Bryson on 2/21/19.
@@ -28,7 +28,6 @@ public:
     //list methods
     void add(Type item);
     void addAtIndex(int index, Type item);
-    void findNode (int index);
     Type remove(int index);
     Type setAtIndex(int index, Type item);
     Type getFromIndex(int index);
@@ -36,7 +35,7 @@ public:
 };
 
  template <class Type>
-    Type CircularList<Type> :: CircularList()
+   CircularList<Type> :: CircularList()
     {
         //stuff
         front = nullptr;
@@ -45,7 +44,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> :: ~CircularList()
+    CircularList<Type> :: ~CircularList()
     {
         //stuff
         DoubleNode<Type> * current = front;
@@ -58,7 +57,7 @@ public:
     }
     
     template <class Type>
-    void CircularList<Type> :: findNode(Type item)
+DoubleNode<Type> * CircularList<Type> :: findNode(int index)
     {
         //stuff
         assert (index >= 0 && index < this->size);
@@ -116,7 +115,7 @@ public:
         if (index < this->size)
         {
             next = findNode(index);
-            previous = next - getPrevious();
+            previous = next->getPrevious();
         }
         else if (index == this->size)
         {
@@ -142,7 +141,7 @@ public:
     }
     
     template <class Type>
-    Type CircularList<Type> :: getFromIndex(int index);
+    Type CircularList<Type> :: getFromIndex(int index)
     {
         //stuff
         assert ( index >= 0 && index < this->size);
@@ -157,7 +156,7 @@ public:
         assert (index >= 0 && index < this->size);
         
         DoubleNode<Type> * removed = findNode(index);
-        DoubleNode<Type> * removedPrevious = remoed->getPrevious();
+        DoubleNode<Type> * removedPrevious = removed->getPrevious();
         DoubleNode<Type> * removedNext = removed->getNext();
         
         if (index == 0)
@@ -188,7 +187,7 @@ public:
         DoubleNode<Type> * replacedValue = findNode(index);
         Type replaced = replacedValue->getData();
         replacedValue->setData(item);
-        return replaced
+        return replaced;
     }
     
     template <class Type>

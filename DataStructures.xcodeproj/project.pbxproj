@@ -187,8 +187,8 @@
 			children = (
 				95F8B56C22147E7C003A888D /* LinearTesters.cpp */,
 				95F8B56D22147E7C003A888D /* LinearTesters.hpp */,
-				9547DD0E223FDB3300A1FB54 /* GraphTester.cpp */,
 				9547DD0F223FDB3300A1FB54 /* GraphTester.hpp */,
+				9547DD0E223FDB3300A1FB54 /* GraphTester.cpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";

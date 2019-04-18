@@ -18,7 +18,7 @@ class Graph
 {
 private:
     static const int MAXIMUM = 50;
-    bool adjecencyMatrix [MAXIMUM][MAXIMUM];
+    bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
     int vertexCount;
@@ -32,7 +32,7 @@ public:
     
     //Connect vertices
     void addEdge(int source, int target);
-    void addEdgeUndireced(int source, int target);
+    void addEdgeUndirected(int source, int target);
     void addEdgeCost(int source, int tareget, int cost);
     //Disconnect vertices
     void removeEdge(int source, int target);
@@ -47,12 +47,12 @@ public:
     //Check connections
     bool hasUndirectedConnection(int source, int target) const;
     bool areConnected(int source, int target)const;
-    std::set<int> neightbors(int vertex) const;
+    std::set<int> neighbors(int vertex) const;
     
     //Traversals
     void depthFirstTraversal(Graph<Type> & graph, int vertex);
     void breadthFirstTraversal(Graph<Type> & graph, int vertex);
-    int costTraveersal(Graph<Type> & graph, int vertex);
+    int costTraversal(Graph<Type> & graph, int vertex);
     
 };
 
@@ -92,7 +92,7 @@ void Graph<Type> :: addVertex(const Type& value)
     int newVertexNumber = vertexCount;
     vertexCount++;
     
-    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVeretxNumber++)
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
         adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
@@ -119,7 +119,7 @@ void Graph<Type> :: addEdgeCost (int source, int target, int cost)
 template <class Type>
 void Graph<Type> :: addEdgeUndirected(int source, int target)
 {
-    asssert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     adjacencyMatrix[source][target] = true;
     adjacencyMatrix[target][source] = true;
 }
@@ -157,7 +157,7 @@ bool Graph<Type> :: hasUndirectedConnection(int source, int target) const
 }
 
 template <class Type>
-bool Graph<Type> :: areConnection(int source, int target) const
+bool Graph<Type> :: areConnected(int source, int target) const
 {
     asssert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     
@@ -170,7 +170,7 @@ bool Graph<Type> :: areConnection(int source, int target) const
 template <class Type>
 std::set<int> Graph<Type> :: neighbors(int vertex) const
 {
-    asssert(vertex < vertexCount);
+    assert(vertex < vertexCount);
     std::set<int> vertexNeighbors;
     
     for (int index = 0; index < vertexCount;  index++)
@@ -188,7 +188,7 @@ template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     bool visitedVertices[MAXIMUM];
-    asssert(vertex < currentGraph.size());
+    assert(vertex < currentGraph.size());
     std::fill_n(visitedVertices, currentGraph.size(), false);
     depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
@@ -203,7 +203,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
     visited[vertex] = true;
     cout << currentGraph[vertex] << ", " << endl;
     
-    for (setIterator = connection.begin(); setIterator != connections.end(); setIterator++)
+    for (setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
     {
         if(!visited[*setIterator])
         {
@@ -244,9 +244,9 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
 }
 
 template <class Type>
-void Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
+int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
 {
-    asssert(start >= 0 && start < vertexCount);
+    assert(start >= 0 && start < vertexCount);
     int cost = 0;
     bool visited[MAXIMUM];
     std::set<int> connections;
@@ -254,7 +254,7 @@ void Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
     std::queue<int> vertexQueue;
     
     std::fill_n(visited, currentGraph.size(), false);
-    visited[vertex] = true;
+    visited[start] = true;
     
     vertexQueue.push(start);
     while (!vertexQueue.empty())
