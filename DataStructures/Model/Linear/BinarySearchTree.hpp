@@ -57,6 +57,18 @@ public:
     
     Type findMinimum();
     Type findMaximum();
+};
+
+template <class Type>
+int BinarySearchTree<Type> getHeight()
+{
+    return -1;
+}
+
+template <class Type>
+int BinarySearchTree<Type> getSize()
+{
+    return -1;
 }
 
 
