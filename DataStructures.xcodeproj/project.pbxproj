@@ -40,6 +40,7 @@
 		9547DD0F223FDB3300A1FB54 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		955418C82260D8AF00600F33 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		955A8966222451F900E8EC90 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		95669D3122788B680088E2CF /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 		959B4191226E00F7007CDFE6 /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
 		95A42EDA21FF5BBA004AE0D8 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A42EE821FF5CC6004AE0D8 /* DataStructuresNode1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DataStructuresNode1.pdf; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 				95BC1C6722303066003303DA /* Graph.hpp */,
 				953BD6EB2268BC4800F5D639 /* Tree.hpp */,
 				953BD6EC2268BFE000F5D639 /* BinarySearchTree.hpp */,
+				95669D3122788B680088E2CF /* AVLTree.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
