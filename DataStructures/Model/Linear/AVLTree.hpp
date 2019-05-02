@@ -212,7 +212,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation (BinaryTreeNode<Type> 
     BinaryTreeNode<Type> * changedNode;
     changedNode = parent->getLeftChild();
     
-    parent->setLeftChild(rightRotation(cahngedNode));
+    parent->setLeftChild(rightRotation(changedNode));
 }
 
 
